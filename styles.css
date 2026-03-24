@@ -1,0 +1,10 @@
+/* THE ALLIANCE GUARDIAN SKIN */
+body { background-color: #CCC; font-family: 'Helvetica Neue', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; color: #333; }
+.card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 90%; max-width: 450px; text-align: center; border-top: 5px solid #ff4d4d; position: relative; }
+.status-tag { font-size: 0.8rem; font-weight: bold; color: #ff4d4d; text-transform: uppercase; margin-bottom: 20px; display: block; letter-spacing: 1px; }
+h1 { font-weight: 800; letter-spacing: -1px; margin: 0 0 10px 0; color: #000; text-transform: uppercase; }
+.display-area { background: #f9f9f9; padding: 25px; border-radius: 10px; margin: 20px 0; border: 1px solid #eee; min-height: 200px; max-height: 400px; overflow-y: auto; line-height: 1.6; text-align: left; position: relative; font-size: 0.95rem; }
+.quote-notif { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #000; color: #fff; padding: 8px 15px; border-radius: 20px; font-size: 0.75rem; font-weight: bold; display: none; width: 85%; text-align: center; z-index: 10; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+button { background: #000; color: white; border: none; padding: 15px; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; text-transform: uppercase; transition: 0.3s; margin-top: 10px; }
+button:hover { background: #333; }
+.nav-footer { font-size: 0.7rem; color: #999; margin-top: 20px; font-weight: bold; }

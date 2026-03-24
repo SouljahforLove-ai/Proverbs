@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Recovery | Alliance Guardian</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <div class="card">
+        <div id="notif-bar" class="quote-notif">PATTERN INTERRUPT</div>
+        <span class="status-tag">Grounding Protocol Active</span>
+        <h1 id="chapter-title">Proverbs</h1>
+        
+        <div class="display-area" id="main-content">
+            Initializing Wisdom Index...
+        </div>
+
+        <button onclick="loadDailyProverb()">Today's Proverb</button>
+        <button class="secondary" onclick="readProverbAloud()" style="background: #333; margin-top: 10px;">Read Aloud</button>
+        <button class="secondary" onclick="stopReading()" style="background: #555; margin-top: 10px;">Stop Audio</button>
+        
+        <div class="nav-footer">
+            12-STEP COMPATIBLE | ALLIANCE GUARDIAN V1.0
+        </div>
+    </div>
+
+    <script src="proverbs.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+          .then(() => console.log("Sovereign Protocol: Offline Engine Active"))
+          .catch(err => console.log("Service Worker Failed", err));
+      }
+    </script>
+</body>
+</html>
